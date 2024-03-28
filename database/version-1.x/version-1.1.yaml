@@ -1,0 +1,17 @@
+databaseChangeLog:
+- changeSet:
+    id: l.1
+    author: saipradyumnan
+    changes:
+      - createTable:
+          columns:
+            - column:
+                autoIncrement: true
+                constraints:
+                  nullable: false
+                name: sample_id
+                type: INTEGER
+            - column:
+                name: sample_text
+                type: VARCHAR2(32)
+          tableName: liquibaseTestTable
