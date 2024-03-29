@@ -1,0 +1,11 @@
+databaseChangeLog:
+- changeSet:
+    id: 1.2
+    author: saipradyumnan
+    changes:
+      - addColumn:
+          tableName: liquibaseTestTable
+          columns:
+          - column:
+              name: sample_email
+              type: varchar(50)
