@@ -1,0 +1,20 @@
+databaseChangeLog:
+-  changeSet:
+    id: 1.5
+    author:  saipradyumnan
+    changes:
+    -  insert:
+        tableName:  liquibaseTestTable
+        columns:
+        -  column:
+            name:  sample_id
+            value:  16
+        -  column:
+            name:  sample_text
+            value:  'sample liquibase test entry 3'
+        -  column:
+            name:  sample_email
+            value:  'sample@sample.com'
+    
+    rollback:
+      sql: delete from liquibaseTestTable where sample_id = 16;
