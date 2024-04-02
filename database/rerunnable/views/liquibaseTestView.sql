@@ -1,6 +1,6 @@
 --liquibase formatted sql
 --changeset saipradyumnan:liquibaseTestView runOnChange:true 
---rollback SELECT 1 FROM DUAL
+--rollback drop view liquibaseTestView
 
 CREATE OR REPLACE VIEW liquibaseTestView AS
 SELECT sample_id, sample_text, sample_email
