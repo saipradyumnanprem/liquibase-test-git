@@ -1,8 +1,7 @@
 name: tag-test
 on:
-  push:
-    branches:
-      - 'main'
+    check_run:
+      types: [rerequested, completed]
 jobs:
 
   basic-ubuntu-20:
