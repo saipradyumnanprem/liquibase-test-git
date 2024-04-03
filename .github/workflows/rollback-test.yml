@@ -1,6 +1,5 @@
 name: rollback-test
-on:
-    create
+on: push
 jobs:
 
   basic-ubuntu-20:
