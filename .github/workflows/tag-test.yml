@@ -1,4 +1,4 @@
-name: update-test
+name: tag-test
 on:
   push:
     branches:
@@ -6,11 +6,12 @@ on:
 jobs:
 
   basic-ubuntu-20:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: liquibase-github-actions/update@v4.27.0
+      - uses: liquibase-github-actions/tag@v4.27.0
         with:
+          tag: "Version1.2"
           changelogFile: ${{ secrets.LIQUIBASE_CHANGELOG_FILE }}
           url: ${{ secrets.LIQUIBASE_DB_URL }}
           username: ${{ secrets.LIQUIBASE_DB_USERNAME }}
