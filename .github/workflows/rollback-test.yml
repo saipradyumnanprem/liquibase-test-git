@@ -1,5 +1,7 @@
 name: rollback-test
-on: push
+on:
+  check_run:
+    types: [rerequested, completed]
 jobs:
 
   basic-ubuntu-20:
