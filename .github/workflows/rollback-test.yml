@@ -13,6 +13,3 @@ jobs:
           tag: "Version1.2"
           changelogFile: ${{ secrets.LIQUIBASE_CHANGELOG_FILE }}
           url: ${{ secrets.LIQUIBASE_DB_URL }}
-          username: ${{ secrets.LIQUIBASE_DB_USERNAME }}
-          password: ${{ secrets.LIQUIBASE_DB_PASS }}
-          logLevel: INFO

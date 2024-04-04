@@ -11,6 +11,5 @@ jobs:
       - uses: liquibase-github-actions/tag@v4.27.0
         with:
           tag: "Version1.4"
-          changelogFile: ${{ secrets.LIQUIBASE_CHANGELOG_FILE }}
           url: ${{ secrets.LIQUIBASE_DB_URL }}
 
