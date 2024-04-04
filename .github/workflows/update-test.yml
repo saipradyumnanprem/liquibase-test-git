@@ -1,7 +1,5 @@
 name: update-test
-on:
-  check_run:
-    types: [rerequested, completed]
+on: push
 jobs:
 
   basic-ubuntu-20:
